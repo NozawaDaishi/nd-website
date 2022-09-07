@@ -1,6 +1,5 @@
-import Layout from 'components/layout'
 import Hero from 'components/hero'
 
-export default function Home() {
-  return <Hero />
+export default function About() {
+  return <Hero title="Project ND" subtitle="Nozawa Daishiのアウトプット" />
 }
