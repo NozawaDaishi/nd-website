@@ -1,3 +1,4 @@
+import styles from 'styles/layout.module.css'
 import Header from 'components/header'
 import Footer from 'components/footer'
 

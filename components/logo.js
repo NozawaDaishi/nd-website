@@ -1,9 +1,10 @@
+import styles from 'styles/logo.module.css'
 import Link from 'next/link'
 
-export default function Logo() {
+export default function Logo({ boxOn = false }) {
   return (
     <Link href="/">
-      <a>Project ND</a>
+      <a className={boxOn ? styles.box : styles.basic}>Project ND</a>
     </Link>
   )
 }
