@@ -12,7 +12,9 @@ export default function Blog({ posts }) {
   return (
     <Container>
       <Meta pageTitle="ブログ" pageDesc="ブログの記事一覧" />
+
       <Hero title="Blog" subtitle="Recent Posts" />
+
       <Posts posts={posts} />
     </Container>
   )
