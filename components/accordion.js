@@ -10,7 +10,7 @@ export default function Accordion({ heading, children }) {
     setTextIsOpen((prev) => !prev)
   }
 
-  const refText = useRef(null)
+  const refText = useRef({ scrollHeight: 0 })
 
   return (
     <div className={textIsOpen ? styles.open : styles.close}>
@@ -20,7 +20,7 @@ export default function Accordion({ heading, children }) {
           <FontAwesomeIcon icon={faCircleChevronDown} className={styles.icon} />
         </button>
       </h3>
-      <div className={styles.text} ref={refText} style={{ '--text-height': refText.current ? `${refText.current.scrollHeight}px` : '0px' }}>
+      <div className={styles.text} ref={refText} style={{ '--text-height': `${refText.current.scrollHeight}px` }}>
         <div className={styles.textInner}>{children}</div>
       </div>
     </div>
