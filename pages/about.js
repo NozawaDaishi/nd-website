@@ -4,6 +4,7 @@ import Hero from 'components/hero'
 import PostBody from 'components/post-body'
 import Contact from 'components/contact'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
+import Accordion from 'components/accordion'
 import Image from 'next/image'
 import eyecatch from 'images/about.jpg'
 
@@ -42,6 +43,18 @@ export default function About() {
               <li>文部科学省後援 情報検定 情報システム試験 システムエンジニア</li>
               <li>CG-ARTS協会 CGクリエイター検定 ベーシック</li>
             </ul>
+
+            <h2>FAQ</h2>
+            <Accordion heading="プログラミングのポイントについて">
+              <p>
+                プログラミングのポイントは作りたいものを作ることです。楽しいことから思いつき、目標とゴールを決め、そこに向かってさまざまな課題を設定していきながら、プログラムを作っていきます。
+              </p>
+            </Accordion>
+            <Accordion heading="プログラミングのポイントについて">
+              <p>
+                プログラミングのポイントは作りたいものを作ることです。楽しいことから思いつき、目標とゴールを決め、そこに向かってさまざまな課題を設定していきながら、プログラムを作っていきます。
+              </p>
+            </Accordion>
           </PostBody>
         </TwoColumnMain>
 
