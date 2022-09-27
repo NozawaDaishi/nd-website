@@ -8,6 +8,10 @@
     display: flex;
     gap: 2em;
   }
+
+  .list li a:hover {
+    color: var(--gray-50);
+  }
 }
 
 /* モバイル */
