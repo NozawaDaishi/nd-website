@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Logo({ boxOn = false }) {
   return (
     <Link href="/">
-      <a className={boxOn ? styles.box : styles.basic}>Project ND</a>
+      <a className={boxOn ? styles.box : styles.basic}>DAISHI NOZAWA</a>
     </Link>
   )
 }
