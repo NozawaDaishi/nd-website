@@ -3,3 +3,7 @@
   gap: 1.5em;
   font-size: var(--icon-size, 24px);
 }
+
+.list li a:hover {
+  color: var(--gray-50);
+}
