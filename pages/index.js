@@ -13,7 +13,7 @@ export default function Home({ posts }) {
   return (
     <Container>
       <Meta />
-      <Hero title="Project ND" subtitle="Nozawa Daishiのアウトプット" imageOn />
+      <Hero title="DAISHI NOZAWA" imageOn />
 
       <Posts posts={posts} />
       <Pagination nextUrl="/blog" nextText="More Posts" />
