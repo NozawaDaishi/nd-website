@@ -12,7 +12,7 @@ export default function Category({ name, posts }) {
   return (
     <Container>
       <Meta pageTitle={name} pageDesc={`${name}に関する記事`} />
-      <PostHeader title={name} subtitle="Blog Category" />
+      <PostHeader title={name} subtitle="Notes Category" />
       <Posts posts={posts} />
     </Container>
   )
@@ -21,7 +21,7 @@ export default function Category({ name, posts }) {
 export async function getStaticPaths() {
   const allCats = await getAllCategories()
   return {
-    paths: allCats.map(({ slug }) => `/blog/category/${slug}`),
+    paths: allCats.map(({ slug }) => `/notes/category/${slug}`),
     fallback: false,
   }
 }

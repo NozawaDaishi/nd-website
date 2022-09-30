@@ -16,7 +16,7 @@ export default function Home({ posts }) {
       <Hero title="DAISHI NOZAWA" imageOn />
 
       <Posts posts={posts} />
-      <Pagination nextUrl="/blog" nextText="More Posts" />
+      <Pagination nextUrl="/notes" nextText="More Posts" />
     </Container>
   )
 }

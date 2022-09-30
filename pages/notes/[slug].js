@@ -21,7 +21,7 @@ export default function Post({ title, publish, content, eyecatch, categories, de
       <Meta pageTitle={title} pageDesc={description} pageImg={eyecatch.url} pageImgW={eyecatch.width} pageImgH={eyecatch.height} />
 
       <article>
-        <PostHeader title={title} subtitle="Blog Article" publish={publish} />
+        <PostHeader title={title} subtitle="Notes Article" publish={publish} />
 
         <figure>
           <Image
@@ -49,7 +49,7 @@ export default function Post({ title, publish, content, eyecatch, categories, de
           </TwoColumnSidebar>
         </TwoColumn>
 
-        <Pagination prevText={prevPost.title} prevUrl={`/blog/${prevPost.slug}`} nextText={nextPost.title} nextUrl={`/blog/${nextPost.slug}`} />
+        <Pagination prevText={prevPost.title} prevUrl={`/notes/${prevPost.slug}`} nextText={nextPost.title} nextUrl={`/notes/${nextPost.slug}`} />
       </article>
     </Container>
   )
@@ -59,7 +59,7 @@ export async function getStaticPaths() {
   const allSlugs = await getAllSlugs()
 
   return {
-    paths: allSlugs.map(({ slug }) => `/blog/${slug}`),
+    paths: allSlugs.map(({ slug }) => `/notes/${slug}`),
     fallback: false,
   }
 }

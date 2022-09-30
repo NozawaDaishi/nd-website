@@ -8,12 +8,12 @@ import { getPlaiceholder } from 'plaiceholder'
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from 'lib/constants'
 
-export default function Blog({ posts }) {
+export default function Notes({ posts }) {
   return (
     <Container>
       <Meta pageTitle="ブログ" pageDesc="ブログの記事一覧" />
 
-      <Hero title="Blog" subtitle="Recent Posts" />
+      <Hero title="Notes" subtitle="Recent Posts" />
 
       <Posts posts={posts} />
     </Container>

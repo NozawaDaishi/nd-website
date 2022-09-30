@@ -1,6 +1,6 @@
 .gridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-jump);
   margin-top: var(--space-xs);
   margin-bottom: var(--space-lg);
@@ -8,8 +8,7 @@
 
 .post {
   overflow: hidden;
-  border: solid 1px var(--gray-25);
-  border-radius: 8px;
+  border: solid 1px var(--gray-10);
   transition: all 0.4s;
 }
 
